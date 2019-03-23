@@ -1,0 +1,202 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/h"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/red2"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".MainPage">
+
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/m">
+
+            <Button
+                android:id="@+id/logOut"
+                android:layout_width="88dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_below="@+id/reg"
+                android:layout_column="0"
+                android:background="#FFFFFF"
+                android:backgroundTint="#FFFFFF"
+                android:text="Log out"
+                android:textColor="#8A0808"
+                android:textSize="12dp"
+                android:visibility="invisible" />
+
+            <Button
+                android:id="@+id/sign"
+                android:layout_width="88dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_below="@+id/logOut"
+                android:layout_column="1"
+                android:background="#870404"
+                android:backgroundTint="#870404"
+                android:text="sign in"
+                android:textColor="#ffffff" />
+
+            <Button
+                android:id="@+id/reg"
+                android:layout_width="176dp"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/competition"
+                android:layout_column="2"
+                android:layout_toEndOf="@+id/competition"
+                android:backgroundTint="#870404"
+                android:text="Registeration"
+                android:textColor="#ffffff"
+                android:visibility="visible"
+                android:background="#870404" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="match_parent"
+                android:layout_marginRight="15dp"
+                android:layout_height="100dp"
+                android:layout_column="0"
+                android:layout_span="3"
+                android:src="@drawable/headline"
+                android:scaleType="fitXY"
+               />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/button3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/competition"
+                android:layout_column="2"
+                android:layout_toEndOf="@+id/competition"
+                android:backgroundTint="#FFFFFF"
+                android:text="Registeration"
+                android:textColor="#8A0808"
+                android:visibility="invisible" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/champions"
+                android:layout_width="40pt"
+                android:layout_height="50pt"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentStart="true"
+                android:layout_column="0"
+                android:layout_span="2"
+                android:background="@drawable/buttonshape"
+
+                android:shadowColor="#590B0B"
+                android:shadowDx="0"
+                android:shadowDy="0"
+                android:shadowRadius="5"
+                android:text="Champions"
+                android:textColor="#FFFFFF"
+                android:typeface="sans" />
+
+            <Button
+                android:id="@+id/settings"
+                android:layout_width="40pt"
+                android:layout_height="50pt"
+                android:layout_alignEnd="@+id/competition"
+                android:layout_alignParentBottom="true"
+                android:layout_alignStart="@+id/competition"
+                android:layout_below="@+id/userZONE"
+
+                android:layout_marginRight="23dp"
+                android:layout_column="1"
+                android:height="5dp"
+
+                android:background="@drawable/buttonshape2"
+                android:shadowColor="#590B0B"
+                android:shadowDx="0"
+                android:shadowDy="0"
+                android:shadowRadius="5"
+
+                android:text="Settings"
+                android:textColor="#FFFFFF" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/userZONE"
+                android:layout_width="40pt"
+                android:layout_height="50pt"
+                android:layout_above="@+id/champions"
+                android:layout_alignParentStart="true"
+                android:layout_column="0"
+
+                android:layout_span="2"
+                android:background="@drawable/buttonshape3"
+                android:shadowColor="#590B0B"
+                android:shadowDx="0"
+
+                android:shadowDy="0"
+                android:shadowRadius="5"
+                android:text="MyZone"
+                android:textColor="#FFFFFF"
+                android:typeface="sans" />
+
+            <Button
+                android:id="@+id/competition"
+                android:layout_width="40pt"
+                android:layout_height="50pt"
+                android:layout_alignTop="@+id/userZONE"
+                android:layout_column="2"
+                android:layout_toEndOf="@+id/champions"
+                android:background="@drawable/buttonshape4"
+
+                android:layout_marginRight="23dp"
+                android:shadowColor="#590B0B"
+                android:shadowDx="0"
+                android:shadowDy="0"
+
+                android:shadowRadius="5"
+                android:text="Competition"
+                android:textColor="#FFFFFF"
+                android:textColorHint="#8A0808"
+                android:typeface="sans" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"></TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </TableRow>
+
+    </TableLayout>
+</RelativeLayout>

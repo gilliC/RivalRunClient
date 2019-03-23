@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.maya.rivalnewfinal" >
+
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".MainPage"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Zone"
+            android:label="@string/title_activity_zone" >
+        </activity>
+        <activity
+            android:name=".TimeCompetition"
+            android:label="@string/title_activity_time_competition" >
+        </activity>
+        <activity
+            android:name=".SignIn"
+            android:label="@string/title_activity_sign_in" >
+        </activity>
+        <activity
+            android:name=".Register"
+            android:label="@string/title_activity_register" >
+        </activity>
+        <activity
+            android:name=".Competition"
+            android:label="@string/title_activity_competition" >
+        </activity>
+        <activity
+            android:name=".Settings"
+            android:label="@string/title_activity_settings" >
+        </activity>
+        <activity
+            android:name=".Champions"
+            android:label="@string/title_activity_champions" >
+        </activity>
+        <activity
+            android:name=".Friends"
+            android:label="@string/title_activity_friends" >
+        </activity>
+        <activity
+            android:name=".Details"
+            android:label="@string/title_activity_details" >
+        </activity>
+        <activity
+            android:name=".DistanceCompetition"
+            android:label="@string/title_activity_distance_competition" >
+        </activity>
+        <activity
+            android:name=".Practice"
+            android:label="@string/title_activity_practice" >
+        </activity>
+    </application>
+
+</manifest>

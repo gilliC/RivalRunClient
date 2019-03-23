@@ -1,0 +1,198 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.example.maya.rivalnewfinal.Friends"
+    android:id="@+id/v"
+    android:background="@drawable/red2">
+
+    <TableLayout
+        android:layout_width="380dp"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:id="@+id/tableLayout2">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:id="@+id/y">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="your \nfriends"
+                android:id="@+id/textView18"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentStart="true"
+                android:layout_column="0"
+                android:textColor="#ffffff"
+                android:textStyle="bold"
+                android:textSize="25dp"
+                android:layout_marginLeft="10dp"
+                android:autoText="false" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:id="@+id/textView14"
+                android:layout_below="@+id/button"
+                android:layout_alignStart="@+id/runame"
+                android:layout_column="1"
+                android:text="Friends \nRequest"
+                android:textColor="#ffffff"
+                android:textStyle="bold"
+                android:textSize="25dp"
+                android:layout_marginLeft="10dp" />
+
+
+            <ImageButton
+                android:layout_width="50dp"
+                android:layout_height="70dp"
+                android:adjustViewBounds="true"
+                android:id="@+id/imageButton"
+                android:src="@drawable/adduser"
+
+                android:scaleType="fitCenter"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_column="2"
+                android:layout_span="2"
+                android:layout_marginLeft="10dp" />
+
+            <Button
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="70dp"
+                android:layout_height="60dp"
+                android:text="Menu"
+                android:id="@+id/back"
+                android:layout_column="6"
+                android:background="#870404"
+                android:backgroundTint="#870404"
+                android:textColor="#ffffff"
+                android:layout_marginTop="3dp"
+                android:textStyle="bold"
+                android:textSize="18dp" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/j"
+            android:layout_marginRight="10dp">
+
+            <ListView
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/listView"
+                android:layout_column="0"
+                android:clickable="true"
+                android:background="#870404"
+                android:backgroundTint="#870404"
+                android:fastScrollEnabled="false"
+                android:stackFromBottom="true" />
+
+            <ListView
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/listView2"
+                android:layout_column="1"
+                android:clickable="true"
+                android:textFilterEnabled="false"
+                android:backgroundTint="#870404"
+                android:background="#870404" />
+
+            <TableLayout
+                android:layout_width="90dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="0dp"
+                android:layout_marginRight="-15dp"
+                android:id="@+id/g">
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/l">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:text="ENTER NAME"
+                        android:id="@+id/textView13"
+                        android:layout_below="@+id/imageButton"
+                        android:layout_alignParentEnd="true"
+                        android:visibility="invisible"
+                        android:textSize="17dp"
+                        android:layout_column="0"
+                        android:textColor="#ffffff"
+                        android:layout_marginRight="10dp" />
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/m">
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:id="@+id/runame"
+                        android:visibility="invisible"
+                        android:layout_alignEnd="@+id/tableLayout2"
+                        android:layout_alignParentTop="true"
+                        android:layout_column="0"
+                        android:fadeScrollbars="false"
+                        android:textColor="#ffffff"
+                        android:layout_marginRight="10dp" />
+                </TableRow>
+
+                <TableRow>
+
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:text="send request"
+                        android:id="@+id/button"
+                        android:layout_below="@+id/runame"
+                        android:layout_alignEnd="@+id/runame"
+                        android:visibility="invisible"
+                        android:layout_column="0"
+                        android:layout_marginRight="10dp"
+                        android:textSize="5dp"
+                        android:background="#870404"
+                        android:backgroundTint="#870404"
+                        android:textColor="#ffffff" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="70dp"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:id="@+id/textView19"
+                        android:layout_column="0"
+                        android:visibility="visible"
+                        android:layout_marginRight="10dp" />
+                </TableRow>
+            </TableLayout>
+
+        </TableRow>
+
+        <TableRow>
+
+        </TableRow>
+
+    </TableLayout>
+
+</RelativeLayout>
